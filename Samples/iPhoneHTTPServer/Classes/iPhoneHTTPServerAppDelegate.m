@@ -4,6 +4,9 @@
 #import "DDLog.h"
 #import "DDTTYLogger.h"
 
+#import "NSHttpConnection.h"
+#import "NSHttpRouter.h"
+
 // Log levels: off, error, warn, info, verbose
 static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 
@@ -51,11 +54,16 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 	DDLogInfo(@"Setting document root: %@", webPath);
 	
 	[httpServer setDocumentRoot:webPath];
-
+    [httpServer setConnectionClass:[NSHTTPConnection class]];
+    [httpServer setPort:6688];
+    
+    [[NSHttpRouter defaultRouter] setHandler:NSClassFromString(@"TestHttpHandler") forPath:@"/test"];
+    
     [self startServer];
     
     // Add the view controller's view to the window and display.
-    [window addSubview:viewController.view];
+    viewController = [[iPhoneHTTPServerViewController alloc] init];
+    [window setRootViewController:viewController];
     [window makeKeyAndVisible];
     
     return YES;

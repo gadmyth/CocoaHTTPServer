@@ -6,6 +6,21 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		6A0F6A751D632B490016FC65 /* Fat Framework */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 6A0F6A761D632B490016FC65 /* Build configuration list for PBXAggregateTarget "Fat Framework" */;
+			buildPhases = (
+				6A0F6A7B1D632B770016FC65 /* ShellScript */,
+			);
+			dependencies = (
+				6A0F6A7A1D632B6D0016FC65 /* PBXTargetDependency */,
+			);
+			name = "Fat Framework";
+			productName = "Fat Framework";
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		1D3623260D0F684500981E51 /* iPhoneHTTPServerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* iPhoneHTTPServerAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
@@ -15,6 +30,60 @@
 		2899E5220DE3E06400AC0155 /* iPhoneHTTPServerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* iPhoneHTTPServerViewController.xib */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D7ACF80DDB3853001CB0EB /* iPhoneHTTPServerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* iPhoneHTTPServerViewController.m */; };
+		6A0F69E31D62C6B10016FC65 /* NSHTTPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0F69E21D62C6B10016FC65 /* NSHTTPConnection.m */; };
+		6A0F6A2C1D63123B0016FC65 /* iPhoneServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A0F6A2B1D63123B0016FC65 /* iPhoneServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A0F6A311D63123B0016FC65 /* iPhoneServer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6A0F6A291D63123B0016FC65 /* iPhoneServer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6A0F6A351D6312820016FC65 /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC369A91538F0B1004C5FA7 /* DDLog.m */; };
+		6A0F6A361D6312820016FC65 /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC369A51538F0B1004C5FA7 /* DDASLLogger.m */; };
+		6A0F6A371D6312820016FC65 /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC369AB1538F0B1004C5FA7 /* DDTTYLogger.m */; };
+		6A0F6A381D6312820016FC65 /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC369A71538F0B1004C5FA7 /* DDFileLogger.m */; };
+		6A0F6A391D6312820016FC65 /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC369A31538F0B1004C5FA7 /* DDAbstractDatabaseLogger.m */; };
+		6A0F6A3A1D6312820016FC65 /* ContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC369AE1538F0B1004C5FA7 /* ContextFilterLogFormatter.m */; };
+		6A0F6A3B1D6312820016FC65 /* DispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC369B01538F0B1004C5FA7 /* DispatchQueueLogFormatter.m */; };
+		6A0F6A3C1D6312820016FC65 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5406DF129F5CB700195140 /* GCDAsyncSocket.m */; };
+		6A0F6A3D1D6312820016FC65 /* HTTPAuthenticationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = DC372EE8139DC2E600A8407D /* HTTPAuthenticationRequest.m */; };
+		6A0F6A3E1D6312820016FC65 /* HTTPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = DC372EF0139DC2E600A8407D /* HTTPServer.m */; };
+		6A0F6A3F1D6312820016FC65 /* HTTPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = DC372EEA139DC2E600A8407D /* HTTPConnection.m */; };
+		6A0F6A401D6312820016FC65 /* HTTPMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = DC372EED139DC2E600A8407D /* HTTPMessage.m */; };
+		6A0F6A411D6312820016FC65 /* WebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = DC372EFD139DC2E600A8407D /* WebSocket.m */; };
+		6A0F6A421D6312820016FC65 /* HTTPAsyncFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = DC372EF3139DC2E600A8407D /* HTTPAsyncFileResponse.m */; };
+		6A0F6A431D6312820016FC65 /* HTTPDataResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = DC372EF5139DC2E600A8407D /* HTTPDataResponse.m */; };
+		6A0F6A441D6312820016FC65 /* HTTPDynamicFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = DC372EF7139DC2E600A8407D /* HTTPDynamicFileResponse.m */; };
+		6A0F6A451D6312820016FC65 /* HTTPFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = DC372EF9139DC2E600A8407D /* HTTPFileResponse.m */; };
+		6A0F6A461D6312820016FC65 /* HTTPRedirectResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = DC372EFB139DC2E600A8407D /* HTTPRedirectResponse.m */; };
+		6A0F6A471D6312820016FC65 /* DDData.m in Sources */ = {isa = PBXBuildFile; fileRef = DC372EE2139DC2E600A8407D /* DDData.m */; };
+		6A0F6A481D6312820016FC65 /* DDNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = DC372EE4139DC2E600A8407D /* DDNumber.m */; };
+		6A0F6A491D6312820016FC65 /* DDRange.m in Sources */ = {isa = PBXBuildFile; fileRef = DC372EE6139DC2E600A8407D /* DDRange.m */; };
+		6A0F6A4A1D6312820016FC65 /* NSHTTPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0F69E21D62C6B10016FC65 /* NSHTTPConnection.m */; };
+		6A0F6A4B1D6312A90016FC65 /* DDLog.h in Headers */ = {isa = PBXBuildFile; fileRef = DCC369A81538F0B1004C5FA7 /* DDLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A0F6A4C1D6312A90016FC65 /* DDASLLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = DCC369A41538F0B1004C5FA7 /* DDASLLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A0F6A4D1D6312A90016FC65 /* DDTTYLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = DCC369AA1538F0B1004C5FA7 /* DDTTYLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A0F6A4E1D6312A90016FC65 /* DDFileLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = DCC369A61538F0B1004C5FA7 /* DDFileLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A0F6A4F1D6312A90016FC65 /* DDAbstractDatabaseLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = DCC369A21538F0B1004C5FA7 /* DDAbstractDatabaseLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A0F6A501D6312A90016FC65 /* ContextFilterLogFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = DCC369AD1538F0B1004C5FA7 /* ContextFilterLogFormatter.h */; };
+		6A0F6A511D6312A90016FC65 /* DispatchQueueLogFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = DCC369AF1538F0B1004C5FA7 /* DispatchQueueLogFormatter.h */; };
+		6A0F6A521D6312A90016FC65 /* GCDAsyncSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = DC5406DE129F5CB700195140 /* GCDAsyncSocket.h */; };
+		6A0F6A531D6312A90016FC65 /* HTTPLogging.h in Headers */ = {isa = PBXBuildFile; fileRef = DC372EEB139DC2E600A8407D /* HTTPLogging.h */; };
+		6A0F6A541D6312A90016FC65 /* HTTPAuthenticationRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = DC372EE7139DC2E600A8407D /* HTTPAuthenticationRequest.h */; };
+		6A0F6A551D6312A90016FC65 /* HTTPServer.h in Headers */ = {isa = PBXBuildFile; fileRef = DC372EEF139DC2E600A8407D /* HTTPServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A0F6A561D6312A90016FC65 /* HTTPConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = DC372EE9139DC2E600A8407D /* HTTPConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A0F6A571D6312A90016FC65 /* HTTPMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = DC372EEC139DC2E600A8407D /* HTTPMessage.h */; };
+		6A0F6A581D6312A90016FC65 /* HTTPResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = DC372EEE139DC2E600A8407D /* HTTPResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A0F6A591D6312A90016FC65 /* WebSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = DC372EFC139DC2E600A8407D /* WebSocket.h */; };
+		6A0F6A5A1D6312A90016FC65 /* HTTPAsyncFileResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = DC372EF2139DC2E600A8407D /* HTTPAsyncFileResponse.h */; };
+		6A0F6A5B1D6312A90016FC65 /* HTTPDataResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = DC372EF4139DC2E600A8407D /* HTTPDataResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A0F6A5C1D6312A90016FC65 /* HTTPDynamicFileResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = DC372EF6139DC2E600A8407D /* HTTPDynamicFileResponse.h */; };
+		6A0F6A5D1D6312A90016FC65 /* HTTPFileResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = DC372EF8139DC2E600A8407D /* HTTPFileResponse.h */; };
+		6A0F6A5E1D6312A90016FC65 /* HTTPRedirectResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = DC372EFA139DC2E600A8407D /* HTTPRedirectResponse.h */; };
+		6A0F6A5F1D6312A90016FC65 /* DDData.h in Headers */ = {isa = PBXBuildFile; fileRef = DC372EE1139DC2E600A8407D /* DDData.h */; };
+		6A0F6A601D6312A90016FC65 /* DDNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = DC372EE3139DC2E600A8407D /* DDNumber.h */; };
+		6A0F6A611D6312A90016FC65 /* DDRange.h in Headers */ = {isa = PBXBuildFile; fileRef = DC372EE5139DC2E600A8407D /* DDRange.h */; };
+		6A0F6A621D6312A90016FC65 /* NSHTTPConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A0F69E11D62C6B10016FC65 /* NSHTTPConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A0F6A681D6316360016FC65 /* NSHttpRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0F6A671D6316360016FC65 /* NSHttpRouter.m */; };
+		6A0F6A691D6319100016FC65 /* NSHttpRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0F6A671D6316360016FC65 /* NSHttpRouter.m */; };
+		6A0F6A6B1D63191C0016FC65 /* NSHttpRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A0F6A661D6316360016FC65 /* NSHttpRouter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A0F6A731D63284D0016FC65 /* TestHttpHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0F6A721D63284D0016FC65 /* TestHttpHandler.m */; };
+		6A0F6A901D63521D0016FC65 /* NSHttpHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A0F6A6D1D631ADB0016FC65 /* NSHttpHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DC372EFE139DC2E600A8407D /* DDData.m in Sources */ = {isa = PBXBuildFile; fileRef = DC372EE2139DC2E600A8407D /* DDData.m */; };
 		DC372EFF139DC2E600A8407D /* DDNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = DC372EE4139DC2E600A8407D /* DDNumber.m */; };
 		DC372F00139DC2E600A8407D /* DDRange.m in Sources */ = {isa = PBXBuildFile; fileRef = DC372EE6139DC2E600A8407D /* DDRange.m */; };
@@ -43,6 +112,44 @@
 		DCD6EAC616FFB10900710668 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DCD6EAC516FFB10900710668 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		6A0F6A791D632B6D0016FC65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6A0F6A281D63123B0016FC65;
+			remoteInfo = iPhoneServer;
+		};
+		6A0F6A7C1D632BA00016FC65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6A0F6A751D632B490016FC65;
+			remoteInfo = "Fat Framework";
+		};
+		6A0F6A8E1D63518D0016FC65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6A0F6A281D63123B0016FC65;
+			remoteInfo = iPhoneServer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6A0F69F51D6311850016FC65 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6A0F6A311D63123B0016FC65 /* iPhoneServer.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* iPhoneHTTPServerAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPhoneHTTPServerAppDelegate.h; sourceTree = "<group>"; };
@@ -56,6 +163,16 @@
 		28D7ACF70DDB3853001CB0EB /* iPhoneHTTPServerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iPhoneHTTPServerViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* iPhoneHTTPServer_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPhoneHTTPServer_Prefix.pch; sourceTree = "<group>"; };
+		6A0F69E11D62C6B10016FC65 /* NSHTTPConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSHTTPConnection.h; sourceTree = "<group>"; };
+		6A0F69E21D62C6B10016FC65 /* NSHTTPConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSHTTPConnection.m; sourceTree = "<group>"; };
+		6A0F6A291D63123B0016FC65 /* iPhoneServer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iPhoneServer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A0F6A2B1D63123B0016FC65 /* iPhoneServer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iPhoneServer.h; sourceTree = "<group>"; };
+		6A0F6A2D1D63123B0016FC65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A0F6A661D6316360016FC65 /* NSHttpRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSHttpRouter.h; sourceTree = "<group>"; };
+		6A0F6A671D6316360016FC65 /* NSHttpRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSHttpRouter.m; sourceTree = "<group>"; };
+		6A0F6A6D1D631ADB0016FC65 /* NSHttpHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSHttpHandler.h; sourceTree = "<group>"; };
+		6A0F6A711D63284D0016FC65 /* TestHttpHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestHttpHandler.h; sourceTree = "<group>"; };
+		6A0F6A721D63284D0016FC65 /* TestHttpHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestHttpHandler.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* iPhoneHTTPServer-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "iPhoneHTTPServer-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		DC372E48139D398400A8407D /* Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Base.xcconfig; sourceTree = "<group>"; };
 		DC372E49139D398400A8407D /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
@@ -124,12 +241,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6A0F6A251D63123B0016FC65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				6A0F6A701D6328100016FC65 /* test */,
+				6A0F69E11D62C6B10016FC65 /* NSHTTPConnection.h */,
+				6A0F69E21D62C6B10016FC65 /* NSHTTPConnection.m */,
+				6A0F6A661D6316360016FC65 /* NSHttpRouter.h */,
+				6A0F6A671D6316360016FC65 /* NSHttpRouter.m */,
+				6A0F6A6D1D631ADB0016FC65 /* NSHttpHandler.h */,
 				1D3623240D0F684500981E51 /* iPhoneHTTPServerAppDelegate.h */,
 				1D3623250D0F684500981E51 /* iPhoneHTTPServerAppDelegate.m */,
 				28D7ACF60DDB3853001CB0EB /* iPhoneHTTPServerViewController.h */,
@@ -142,6 +272,7 @@
 			isa = PBXGroup;
 			children = (
 				1D6058910D05DD3D006BFB54 /* iPhoneHTTPServer.app */,
+				6A0F6A291D63123B0016FC65 /* iPhoneServer.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -156,6 +287,7 @@
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
+				6A0F6A2A1D63123B0016FC65 /* iPhoneServer */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 			);
@@ -193,6 +325,24 @@
 				DCC3699D1538F08B004C5FA7 /* Security.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6A0F6A2A1D63123B0016FC65 /* iPhoneServer */ = {
+			isa = PBXGroup;
+			children = (
+				6A0F6A2B1D63123B0016FC65 /* iPhoneServer.h */,
+				6A0F6A2D1D63123B0016FC65 /* Info.plist */,
+			);
+			path = iPhoneServer;
+			sourceTree = "<group>";
+		};
+		6A0F6A701D6328100016FC65 /* test */ = {
+			isa = PBXGroup;
+			children = (
+				6A0F6A711D63284D0016FC65 /* TestHttpHandler.h */,
+				6A0F6A721D63284D0016FC65 /* TestHttpHandler.m */,
+			);
+			path = test;
 			sourceTree = "<group>";
 		};
 		DC372E47139D398400A8407D /* Xcode-Configurations */ = {
@@ -301,6 +451,43 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		6A0F6A261D63123B0016FC65 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A0F6A2C1D63123B0016FC65 /* iPhoneServer.h in Headers */,
+				6A0F6A551D6312A90016FC65 /* HTTPServer.h in Headers */,
+				6A0F6A6B1D63191C0016FC65 /* NSHttpRouter.h in Headers */,
+				6A0F6A561D6312A90016FC65 /* HTTPConnection.h in Headers */,
+				6A0F6A901D63521D0016FC65 /* NSHttpHandler.h in Headers */,
+				6A0F6A621D6312A90016FC65 /* NSHTTPConnection.h in Headers */,
+				6A0F6A581D6312A90016FC65 /* HTTPResponse.h in Headers */,
+				6A0F6A5B1D6312A90016FC65 /* HTTPDataResponse.h in Headers */,
+				6A0F6A4B1D6312A90016FC65 /* DDLog.h in Headers */,
+				6A0F6A4E1D6312A90016FC65 /* DDFileLogger.h in Headers */,
+				6A0F6A4D1D6312A90016FC65 /* DDTTYLogger.h in Headers */,
+				6A0F6A4C1D6312A90016FC65 /* DDASLLogger.h in Headers */,
+				6A0F6A4F1D6312A90016FC65 /* DDAbstractDatabaseLogger.h in Headers */,
+				6A0F6A501D6312A90016FC65 /* ContextFilterLogFormatter.h in Headers */,
+				6A0F6A511D6312A90016FC65 /* DispatchQueueLogFormatter.h in Headers */,
+				6A0F6A521D6312A90016FC65 /* GCDAsyncSocket.h in Headers */,
+				6A0F6A531D6312A90016FC65 /* HTTPLogging.h in Headers */,
+				6A0F6A541D6312A90016FC65 /* HTTPAuthenticationRequest.h in Headers */,
+				6A0F6A571D6312A90016FC65 /* HTTPMessage.h in Headers */,
+				6A0F6A591D6312A90016FC65 /* WebSocket.h in Headers */,
+				6A0F6A5A1D6312A90016FC65 /* HTTPAsyncFileResponse.h in Headers */,
+				6A0F6A5C1D6312A90016FC65 /* HTTPDynamicFileResponse.h in Headers */,
+				6A0F6A5D1D6312A90016FC65 /* HTTPFileResponse.h in Headers */,
+				6A0F6A5E1D6312A90016FC65 /* HTTPRedirectResponse.h in Headers */,
+				6A0F6A5F1D6312A90016FC65 /* DDData.h in Headers */,
+				6A0F6A601D6312A90016FC65 /* DDNumber.h in Headers */,
+				6A0F6A611D6312A90016FC65 /* DDRange.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		1D6058900D05DD3D006BFB54 /* iPhoneHTTPServer */ = {
 			isa = PBXNativeTarget;
@@ -309,15 +496,36 @@
 				1D60588D0D05DD3D006BFB54 /* Resources */,
 				1D60588E0D05DD3D006BFB54 /* Sources */,
 				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+				6A0F69F51D6311850016FC65 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				6A0F6A8F1D63518D0016FC65 /* PBXTargetDependency */,
+				6A0F6A7D1D632BA00016FC65 /* PBXTargetDependency */,
 			);
 			name = iPhoneHTTPServer;
 			productName = iPhoneHTTPServer;
 			productReference = 1D6058910D05DD3D006BFB54 /* iPhoneHTTPServer.app */;
 			productType = "com.apple.product-type.application";
+		};
+		6A0F6A281D63123B0016FC65 /* iPhoneServer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A0F6A321D63123B0016FC65 /* Build configuration list for PBXNativeTarget "iPhoneServer" */;
+			buildPhases = (
+				6A0F6A241D63123B0016FC65 /* Sources */,
+				6A0F6A251D63123B0016FC65 /* Frameworks */,
+				6A0F6A261D63123B0016FC65 /* Headers */,
+				6A0F6A271D63123B0016FC65 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iPhoneServer;
+			productName = iPhoneServer;
+			productReference = 6A0F6A291D63123B0016FC65 /* iPhoneServer.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -326,6 +534,14 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0460;
+				TargetAttributes = {
+					6A0F6A281D63123B0016FC65 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					6A0F6A751D632B490016FC65 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "iPhoneHTTPServer" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -342,6 +558,8 @@
 			projectRoot = "";
 			targets = (
 				1D6058900D05DD3D006BFB54 /* iPhoneHTTPServer */,
+				6A0F6A281D63123B0016FC65 /* iPhoneServer */,
+				6A0F6A751D632B490016FC65 /* Fat Framework */,
 			);
 		};
 /* End PBXProject section */
@@ -359,7 +577,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6A0F6A271D63123B0016FC65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6A0F6A7B1D632B770016FC65 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "bash ${PROJECT_DIR}/Run\\ Scripts/fat_framework.sh -F iPhoneServer\n\ncp -r ${BUILD_ROOT}/${CONFIGURATION}-Universal-${PLATFORM_NAME}/iPhoneServer.framework /Users/gadmyth/Documents/WDCredit/WDCredit/";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1D60588E0D05DD3D006BFB54 /* Sources */ = {
@@ -367,6 +608,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				6A0F69E31D62C6B10016FC65 /* NSHTTPConnection.m in Sources */,
 				1D3623260D0F684500981E51 /* iPhoneHTTPServerAppDelegate.m in Sources */,
 				28D7ACF80DDB3853001CB0EB /* iPhoneHTTPServerViewController.m in Sources */,
 				DC5406E0129F5CB700195140 /* GCDAsyncSocket.m in Sources */,
@@ -382,6 +624,7 @@
 				DC372F07139DC2E600A8407D /* HTTPDynamicFileResponse.m in Sources */,
 				DC372F08139DC2E600A8407D /* HTTPFileResponse.m in Sources */,
 				DC372F09139DC2E600A8407D /* HTTPRedirectResponse.m in Sources */,
+				6A0F6A681D6316360016FC65 /* NSHttpRouter.m in Sources */,
 				DC372F0A139DC2E600A8407D /* WebSocket.m in Sources */,
 				DCC369B31538F0B1004C5FA7 /* DDAbstractDatabaseLogger.m in Sources */,
 				DCC369B41538F0B1004C5FA7 /* DDASLLogger.m in Sources */,
@@ -390,18 +633,74 @@
 				DCC369B71538F0B1004C5FA7 /* DDTTYLogger.m in Sources */,
 				DCC369B81538F0B1004C5FA7 /* ContextFilterLogFormatter.m in Sources */,
 				DCC369B91538F0B1004C5FA7 /* DispatchQueueLogFormatter.m in Sources */,
+				6A0F6A731D63284D0016FC65 /* TestHttpHandler.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A0F6A241D63123B0016FC65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A0F6A691D6319100016FC65 /* NSHttpRouter.m in Sources */,
+				6A0F6A351D6312820016FC65 /* DDLog.m in Sources */,
+				6A0F6A361D6312820016FC65 /* DDASLLogger.m in Sources */,
+				6A0F6A371D6312820016FC65 /* DDTTYLogger.m in Sources */,
+				6A0F6A381D6312820016FC65 /* DDFileLogger.m in Sources */,
+				6A0F6A391D6312820016FC65 /* DDAbstractDatabaseLogger.m in Sources */,
+				6A0F6A3A1D6312820016FC65 /* ContextFilterLogFormatter.m in Sources */,
+				6A0F6A3B1D6312820016FC65 /* DispatchQueueLogFormatter.m in Sources */,
+				6A0F6A3C1D6312820016FC65 /* GCDAsyncSocket.m in Sources */,
+				6A0F6A3D1D6312820016FC65 /* HTTPAuthenticationRequest.m in Sources */,
+				6A0F6A3E1D6312820016FC65 /* HTTPServer.m in Sources */,
+				6A0F6A3F1D6312820016FC65 /* HTTPConnection.m in Sources */,
+				6A0F6A401D6312820016FC65 /* HTTPMessage.m in Sources */,
+				6A0F6A411D6312820016FC65 /* WebSocket.m in Sources */,
+				6A0F6A421D6312820016FC65 /* HTTPAsyncFileResponse.m in Sources */,
+				6A0F6A431D6312820016FC65 /* HTTPDataResponse.m in Sources */,
+				6A0F6A441D6312820016FC65 /* HTTPDynamicFileResponse.m in Sources */,
+				6A0F6A451D6312820016FC65 /* HTTPFileResponse.m in Sources */,
+				6A0F6A461D6312820016FC65 /* HTTPRedirectResponse.m in Sources */,
+				6A0F6A471D6312820016FC65 /* DDData.m in Sources */,
+				6A0F6A481D6312820016FC65 /* DDNumber.m in Sources */,
+				6A0F6A491D6312820016FC65 /* DDRange.m in Sources */,
+				6A0F6A4A1D6312820016FC65 /* NSHTTPConnection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		6A0F6A7A1D632B6D0016FC65 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6A0F6A281D63123B0016FC65 /* iPhoneServer */;
+			targetProxy = 6A0F6A791D632B6D0016FC65 /* PBXContainerItemProxy */;
+		};
+		6A0F6A7D1D632BA00016FC65 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6A0F6A751D632B490016FC65 /* Fat Framework */;
+			targetProxy = 6A0F6A7C1D632BA00016FC65 /* PBXContainerItemProxy */;
+		};
+		6A0F6A8F1D63518D0016FC65 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6A0F6A281D63123B0016FC65 /* iPhoneServer */;
+			targetProxy = 6A0F6A8E1D63518D0016FC65 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREFIX_HEADER = iPhoneHTTPServer_Prefix.pch;
 				INFOPLIST_FILE = "iPhoneHTTPServer-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wandaloans.iPhoneHTTPServer;
 				PRODUCT_NAME = iPhoneHTTPServer;
 			};
 			name = Debug;
@@ -409,10 +708,140 @@
 		1D6058950D05DD3E006BFB54 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREFIX_HEADER = iPhoneHTTPServer_Prefix.pch;
 				INFOPLIST_FILE = "iPhoneHTTPServer-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wandaloans.iPhoneHTTPServer;
 				PRODUCT_NAME = iPhoneHTTPServer;
+			};
+			name = Release;
+		};
+		6A0F6A331D63123B0016FC65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = "";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = iPhoneServer/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wandaloans.timesloan.iPhoneServer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6A0F6A341D63123B0016FC65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = iPhoneServer/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wandaloans.timesloan.iPhoneServer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6A0F6A771D632B490016FC65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		6A0F6A781D632B490016FC65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -426,6 +855,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				SDKROOT = iphoneos;
@@ -442,6 +872,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				SDKROOT = iphoneos;
@@ -456,6 +887,24 @@
 			buildConfigurations = (
 				1D6058940D05DD3E006BFB54 /* Debug */,
 				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A0F6A321D63123B0016FC65 /* Build configuration list for PBXNativeTarget "iPhoneServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A0F6A331D63123B0016FC65 /* Debug */,
+				6A0F6A341D63123B0016FC65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A0F6A761D632B490016FC65 /* Build configuration list for PBXAggregateTarget "Fat Framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A0F6A771D632B490016FC65 /* Debug */,
+				6A0F6A781D632B490016FC65 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
