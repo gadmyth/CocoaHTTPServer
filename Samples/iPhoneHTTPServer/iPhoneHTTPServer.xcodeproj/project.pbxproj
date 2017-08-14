@@ -84,6 +84,8 @@
 		6A0F6A6B1D63191C0016FC65 /* NSHttpRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A0F6A661D6316360016FC65 /* NSHttpRouter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6A0F6A731D63284D0016FC65 /* TestHttpHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0F6A721D63284D0016FC65 /* TestHttpHandler.m */; };
 		6A0F6A901D63521D0016FC65 /* NSHttpHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A0F6A6D1D631ADB0016FC65 /* NSHttpHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A5F668B1F413F5A00ABEBD1 /* NSHTTPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A5F668A1F413F5A00ABEBD1 /* NSHTTPServer.m */; };
+		6A5F66AF1F4151CD00ABEBD1 /* NSHTTPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A5F668A1F413F5A00ABEBD1 /* NSHTTPServer.m */; };
 		DC372EFE139DC2E600A8407D /* DDData.m in Sources */ = {isa = PBXBuildFile; fileRef = DC372EE2139DC2E600A8407D /* DDData.m */; };
 		DC372EFF139DC2E600A8407D /* DDNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = DC372EE4139DC2E600A8407D /* DDNumber.m */; };
 		DC372F00139DC2E600A8407D /* DDRange.m in Sources */ = {isa = PBXBuildFile; fileRef = DC372EE6139DC2E600A8407D /* DDRange.m */; };
@@ -173,6 +175,8 @@
 		6A0F6A6D1D631ADB0016FC65 /* NSHttpHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSHttpHandler.h; sourceTree = "<group>"; };
 		6A0F6A711D63284D0016FC65 /* TestHttpHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestHttpHandler.h; sourceTree = "<group>"; };
 		6A0F6A721D63284D0016FC65 /* TestHttpHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestHttpHandler.m; sourceTree = "<group>"; };
+		6A5F66891F413F5A00ABEBD1 /* NSHTTPServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSHTTPServer.h; sourceTree = "<group>"; };
+		6A5F668A1F413F5A00ABEBD1 /* NSHTTPServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSHTTPServer.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* iPhoneHTTPServer-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "iPhoneHTTPServer-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		DC372E48139D398400A8407D /* Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Base.xcconfig; sourceTree = "<group>"; };
 		DC372E49139D398400A8407D /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
@@ -255,6 +259,8 @@
 			isa = PBXGroup;
 			children = (
 				6A0F6A701D6328100016FC65 /* test */,
+				6A5F66891F413F5A00ABEBD1 /* NSHTTPServer.h */,
+				6A5F668A1F413F5A00ABEBD1 /* NSHTTPServer.m */,
 				6A0F69E11D62C6B10016FC65 /* NSHTTPConnection.h */,
 				6A0F69E21D62C6B10016FC65 /* NSHTTPConnection.m */,
 				6A0F6A661D6316360016FC65 /* NSHttpRouter.h */,
@@ -610,6 +616,7 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				6A0F69E31D62C6B10016FC65 /* NSHTTPConnection.m in Sources */,
 				1D3623260D0F684500981E51 /* iPhoneHTTPServerAppDelegate.m in Sources */,
+				6A5F668B1F413F5A00ABEBD1 /* NSHTTPServer.m in Sources */,
 				28D7ACF80DDB3853001CB0EB /* iPhoneHTTPServerViewController.m in Sources */,
 				DC5406E0129F5CB700195140 /* GCDAsyncSocket.m in Sources */,
 				DC372EFE139DC2E600A8407D /* DDData.m in Sources */,
@@ -641,6 +648,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A5F66AF1F4151CD00ABEBD1 /* NSHTTPServer.m in Sources */,
 				6A0F6A691D6319100016FC65 /* NSHttpRouter.m in Sources */,
 				6A0F6A351D6312820016FC65 /* DDLog.m in Sources */,
 				6A0F6A361D6312820016FC65 /* DDASLLogger.m in Sources */,
